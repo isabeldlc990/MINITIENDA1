@@ -146,4 +146,15 @@ php artisan storage:link
 # 6. Iniciar el servidor
 php artisan serve
 
+📚 Tecnologías Utilizadas
+Laravel 12
+PHP 8
+MySQL
+Blade
+Tailwind CSS
+Laravel Breeze
+Spatie Laravel Permission
+Composer
+Vite
+
 
