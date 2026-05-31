@@ -1,160 +1,58 @@
-
-# 🛒 MiniTienda - Sistema de Gestión de Ventas e Inventario
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
-  <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
----
+## About Laravel
 
-## 📌 Información General
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-* **Proyecto:** MiniTienda
-* **Tipo de Aplicación:** Sistema Web de Gestión de Ventas e Inventario
-* **Framework:** Laravel 12
-* **Lenguaje:** PHP 8.x
-* **Base de Datos:** MySQL
-* **Frontend:** Blade + Tailwind CSS
-* **Control de Acceso:** Spatie Laravel Permission
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
----
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## 📖 Descripción del Proyecto
+## Learning Laravel
 
-**MiniTienda** es una aplicación web desarrollada para administrar de forma eficiente las operaciones de una tienda comercial. 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-El sistema permite gestionar productos, categorías, inventario, ventas, usuarios y compras en línea mediante un carrito de compras. Además, incorpora un sistema de autenticación y autorización basado en roles para garantizar la seguridad y el control de acceso.
+In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-La aplicación fue desarrollada siguiendo el patrón **MVC (Modelo - Vista - Controlador)** proporcionado por Laravel.
+You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
 
----
+## Agentic Development
 
-## 🎯 Objetivos del Sistema
+Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
 
-### Objetivo General
-Desarrollar un sistema web que permita administrar los procesos de inventario, ventas y usuarios de una tienda utilizando Laravel y MySQL.
-
-### Objetivos Específicos
-* 📦 Gestionar productos y categorías.
-* 📉 Controlar existencias de inventario.
-* 💰 Registrar ventas realizadas.
-* 🛒 Implementar carrito de compras.
-* 👥 Administrar usuarios mediante roles.
-* 🛍 Permite el seguimiento de compras realizadas por clientes.
-* 🔐 Aplicar control de acceso basado en permisos.
-
----
-
-## 🏗 Arquitectura del Sistema
-
-El sistema utiliza la arquitectura estándar **MVC**, estructurada de la siguiente manera:
-
-| 🗄️ Modelos | ⚙️ Controladores | 🎨 Vistas |
-| :--- | :--- | :--- |
-| • User<br>• Product<br>• Category<br>• Sale<br>• SaleDetail | • ProductController<br>• CategoryController<br>• CartController<br>• StoreController<br>• UserController<br>• ProfileController | • Dashboard Administrativo<br>• Gestión de Productos / Categorías<br>• Gestión de Usuarios<br>• Tienda Virtual<br>• Carrito de Compras<br>• Historial de Compras |
-
----
-
-## 👥 Roles y Funciones del Sistema
-
-### 👑 Administrador
-> Tiene acceso total al sistema.
-* **Gestión de Usuarios:** Crear, editar, eliminar y asignar roles.
-* **Gestión de Catálogo:** Control total sobre productos y categorías.
-* **Operaciones:** Monitoreo y control de inventario y ventas.
-
-### 📦 Gestor de Inventario
-> Responsable del control operativo del inventario.
-* **Productos:** Registrar, modificar y eliminar artículos.
-* **Organización:** Gestionar categorías y actualización de stock en tiempo real.
-* **Consultas:** Acceso a la visualización y reporte de ventas.
-
-### 🛍️ Cliente
-> Usuario final de la tienda virtual.
-* **Acceso:** Registro e inicio de sesión seguro.
-* **Compra:** Consultar productos, interactuar con el carrito y procesar el pago.
-* **Seguimiento:** Consulta detallada de su historial de pedidos.
-
----
-
-## 🧩 Módulos Principales
-
-### 📦 Módulo de Inventario
-Permite administrar todos los productos de la tienda de forma centralizada.
-* CRUD completo de productos (Crear, Editar, Eliminar, Consultar).
-* Control automatizado de stock disponible.
-* Clasificación y organización por categorías.
-
-### 💰 Módulo de Ventas & Carrito
-Soporta el flujo comercial desde la selección hasta el despacho.
-* **Carrito de compras:** Agregar, eliminar y previsualizar el resumen del pedido.
-* **Procesamiento:** Registro automático de la venta y generación de detalles.
-* **Automatización:** Cálculo de totales y rebaja automatizada del stock.
-
-### 👤 Módulo de Usuarios & Seguridad
-Garantiza que cada usuario acceda únicamente a lo que le corresponde.
-* Administración y asignación de roles.
-* Gestión de permisos específicos mediante **Spatie Permission**.
-
----
-
-## 📊 Base de Datos (Tablas Principales)
-
-* **Autenticación y Roles:** `users`, `roles`, `permissions`, `model_has_roles`, `model_has_permissions`, `role_has_permissions`.
-* **Inventario:** `products`, `categories`.
-* **Ventas:** `sales`, `sale_details`.
-
----
-
-## 🔐 Seguridad Implementadas
-
-* [x] Autenticación de usuarios segura.
-* [x] Middleware de autorización por rutas y controladores.
-* [x] Control de acceso basado en roles (RBAC) con Spatie.
-* [x] Protección contra ataques CSRF.
-* [x] Validaciones estrictas en formularios de Request.
-
----
-
-## 🚀 Instalación y Configuración
-
-Sigue estos pasos para levantar el entorno de desarrollo local:
-
-### 1. Clonar el repositorio
 ```bash
-git clone URL_DEL_REPOSITORIO
-cd minitienda
-# 2. Instalar dependencias de PHP
-composer install
+composer require laravel/boost --dev
 
-# 3. Configurar el entorno
-cp .env.example .env
+php artisan boost:install
+```
 
-# Nota: Recuerda abrir el archivo .env y configurar tus credenciales de base de datos
-# (DB_DATABASE, DB_USERNAME, DB_PASSWORD) antes de continuar con el paso 4.
+Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
 
-# 4. Preparar la aplicación
-php artisan key_generate
-php artisan migrate --seed
+## Contributing
 
-# 5. Configurar almacenamiento externo
-php artisan storage:link
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-# 6. Iniciar el servidor
-php artisan serve
+## Code of Conduct
 
-📚 Tecnologías Utilizadas
-Laravel 12
-PHP 8
-MySQL
-Blade
-Tailwind CSS
-Laravel Breeze
-Spatie Laravel Permission
-Composer
-Vite
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
+## Security Vulnerabilities
 
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
