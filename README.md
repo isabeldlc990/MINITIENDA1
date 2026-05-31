@@ -127,12 +127,14 @@ Sigue estos pasos para levantar el entorno de desarrollo local:
 git clone URL_DEL_REPOSITORIO
 cd minitienda
 ---
-####2. Instalar dependencias de PHP
+###2. Instalar dependencias de PHP
 Bash
 composer install
+---
 ####3. Configurar el entorno
 Bash
 cp .env.example .env
+---
 ####4.Abre el archivo .env y configura las credenciales de tu base de datos local:
 
 Fragmento de código
