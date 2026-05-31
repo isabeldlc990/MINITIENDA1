@@ -145,4 +145,22 @@ php artisan storage:link
 
 # 6. Iniciar el servidor
 php artisan serve
+Pantalla de Login
+<img width="818" height="977" alt="image" src="https://github.com/user-attachments/assets/c3fc43a2-089a-4831-b986-6bf100785d4f" />
+
+Dashboard Administrador
+<img width="1863" height="918" alt="image" src="https://github.com/user-attachments/assets/20ad0d68-86b6-4f7f-8e49-f245cf4fb360" />
+
+Modulo de inventario
+<img width="1874" height="913" alt="image" src="https://github.com/user-attachments/assets/d71284fd-f500-4a0c-af9f-14f33075160b" />
+
+Gestión de Usuarios
+<img width="1900" height="844" alt="image" src="https://github.com/user-attachments/assets/c6d7bbdf-78f1-4400-84d4-0ed2553eead8" />
+
+Carrito de Compras
+<img width="1388" height="971" alt="image" src="https://github.com/user-attachments/assets/5cd584de-daa2-43d2-a7c8-59da44b5f98c" />
+
+Historial de Compras
+
+<img width="843" height="877" alt="image" src="https://github.com/user-attachments/assets/75ce0b87-8170-4001-ae82-00cc4a9def8e" />
 
