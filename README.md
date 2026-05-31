@@ -126,3 +126,39 @@ Sigue estos pasos para levantar el entorno de desarrollo local:
 ```bash
 git clone URL_DEL_REPOSITORIO
 cd minitienda
+---
+####2. Instalar dependencias de PHP
+Bash
+composer install
+####3. Configurar el entorno
+Bash
+cp .env.example .env
+####4.Abre el archivo .env y configura las credenciales de tu base de datos local:
+
+Fragmento de código
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=minitienda
+DB_USERNAME=root
+DB_PASSWORD=
+#####5. Inicializar la aplicación
+Bash
+# Generar la clave de la aplicación
+php artisan key:generate
+
+# Ejecutar migraciones y seeders
+php artisan migrate --seed
+
+# Crear el enlace simbólico para el almacenamiento de imágenes
+php artisan storage:link
+######6. Compilar Assets y lanzar el servidor
+En terminales separadas, ejecuta:
+
+Bash
+# Servidor de desarrollo de Laravel
+php artisan serve
+
+# Compilación de estilos con Vite
+npm install
+npm run dev
