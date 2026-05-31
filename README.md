@@ -116,11 +116,6 @@ Garantiza que cada usuario acceda únicamente a lo que le corresponde.
 * [x] Protección contra ataques CSRF.
 * [x] Validaciones estrictas en formularios de Request.
 
----
-
-## 🚀 Instalación y Configuración
-
-Sigue estos pasos para levantar el entorno de desarrollo local:
 
 ### 1. Clonar el repositorio
 ```bash
@@ -164,3 +159,18 @@ php artisan serve
 # Compilación de estilos con Vite
 npm install
 npm run dev
+---
+
+
+📚 Tecnologías Utilizadas
+Backend: Laravel 12 & PHP 8
+
+Base de Datos: MySQL
+
+Frontend: Blade Components & Tailwind CSS
+
+Autenticación Starter Kit: Laravel Breeze
+
+Permisos: Spatie Laravel Permission
+
+Gestores de Paquetes: Composer & Vite
